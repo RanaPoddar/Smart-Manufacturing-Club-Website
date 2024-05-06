@@ -1,0 +1,106 @@
+@import '../../styles/mixins.scss'; 
+
+.navbar {
+    // background-color: rgba(0,0,0,0.2);
+    padding-block: 0.6rem;
+    position: relative;
+   
+    align-content: center;
+height: 80px;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // New Add ons ... for padding 
+        padding-left: 50px;
+        padding-right: 50px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__logo img {
+        width: 5rem;
+    }
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    @include respond(tab-port) {
+        flex-direction: column;
+        gap: 1.2rem;
+        // align-items: center;
+        align-items: flex-start;
+        // position: absolute;
+        // top: 100%;
+        // left: 0;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        padding: 2rem;
+        background-color: var(--black);
+        // background-color: rgba(0,0,0,0.2);
+        // width: 100%;
+        width: 300px;
+        height: 100vh;
+        border-top: 1px solid var(--spanish-gray);
+        // display: none;
+        display: flex;
+        z-index: 99;
+        transition: 0.3s ease-in-out;
+    }
+
+    a{
+        color: var(--cultured);
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        font-family: "Poppins";
+        font-weight: 400;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+}
+
+&__btns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    a {
+        text-transform: capitalize;
+        color: var(--cultured);
+    }
+
+// Hiding Buttons for Tab screen
+@include respond(tab-port) {
+    display: none;
+}
+}
+
+&__menu {
+    display: none;
+    z-index: 500;
+
+    @include respond(tab-port) {
+        display: inline-block;
+        font-size: 2.3rem;
+        color: var(--spanish-gray);
+        // color: rgba(0,0,0,0.2);
+    }
+}
+.show {
+    // display: flex;
+    right: 0px;
+}
+
+}
+
+.navbar.active{
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+	background-color: #000000;
+}
+
