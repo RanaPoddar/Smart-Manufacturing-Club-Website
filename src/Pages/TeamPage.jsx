@@ -62,7 +62,7 @@ function TeamPage() {
   <h2 className='text-customOrange uppercase font-semibold font-[poppins] text-3xl lg:text-5xl text-center'>Developer</h2>
 <div className='flex justify-center items-center'>
 {/* props of card --->  */}
-<Card img="https://media.licdn.com/dms/image/C4E03AQEOf40RdUUDWg/profile-displayphoto-shrink_400_400/0/1517473399338?e=1720051200&v=beta&t=cTHcZEOwJNwKiWEqAfTHD0fWFtfp-umeeyQCg02Qg78" name="dr Himanshu khandelwal" about="Proff at NIAMT Ranchi" fb="https://www.facebook.com" linkedin="" mail=""/>
+<Card img="https://media.licdn.com/dms/image/D5603AQE9B4cqjhQeaA/profile-displayphoto-shrink_800_800/0/1710532311822?e=1721260800&v=beta&t=p0C5KhOrc4mt52hZt62csfpA74JvtU_XyM0j5_UU858" name="Rana Poddar" about="Student at NIAMT Ranchi" fb="https://www.linkedin.com/in/rana-poddar-40a485274/" linkedin="https://www.linkedin.com/in/rana-poddar-40a485274/" mail=""/>
 </div>
 
 </div>
